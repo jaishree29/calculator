@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="result" readonly>
+            <div class="keys">
+
+                <!-- row 1 -->
+
+                <div class="row">
+                    <button class="clear" value="CE" onclick= "clearExpression()">CE</button>
+                    <button class="operator" value="+" onclick="addToExpression('+')">+</button>
+                    <button class="operator" value="-" onclick="addToExpression('-')">-</button>
+                    <button class="operator" value="/" onclick="addToExpression('/')">/</button>
+                </div>
+
+                <!-- row 2 -->
+
+                <div class="row">
+                    <button class="number" value="7" onclick="addToExpression('7')">7</button>
+                    <button class="number" value="8" onclick="addToExpression('8')">8</button>
+                    <button class="number" value="9" onclick="addToExpression('9')">9</button>
+                    <button class="operator" value="*" onclick="addToExpression('*')">*</button>
+                </div>
+
+                <!-- row 3 -->
+
+                <div class="row">
+                    <button class="number" value="4" onclick="addToExpression('4')">4</button>
+                    <button class="number" value="5" onclick="addToExpression('5')">5</button>
+                    <button class="number" value="6" onclick="addToExpression('6')">6</button>
+                    <button class="operator" value="(" onclick="addToExpression('(')">(</button>
+                </div>
+
+                <!-- row 4 -->
+
+                <div class="row">
+                    <button class="number" value="1" onclick="addToExpression('1')">1</button>
+                    <button class="number" value="2" onclick="addToExpression('2')">2</button>
+                    <button class="number" value="3" onclick="addToExpression('3')">3</button>
+                    <button class="equal" value=")" onclick="addToExpression(')')">)</button>
+                </div>
+
+                <!-- row 5 -->
+
+                <div class="row">
+                    <button class="number" value="0" onclick="addToExpression('0')">0</button>
+                    <button class="number" value="." onclick="addToExpression('.')">.</button>
+                    <button class="number" value="00" onclick="addToExpression('00')">00</button>
+                    <button class="equal" value="=" onclick="addToExpression('=')">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
